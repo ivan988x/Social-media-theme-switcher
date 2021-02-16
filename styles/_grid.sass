@@ -1,0 +1,59 @@
+@import 'colors';
+
+%align-center
+  display: grid
+  align-items: center
+  
+.profile 
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  justify-items: center
+
+
+.header-over 
+  @extend %align-center
+  height: 100px
+  margin-left: 15px
+  color: $white
+
+
+.overview 
+  width: 1200px
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  justify-items: center
+  
+
+
+.overview-box 
+  height: 180px
+  width: 270px
+  background-color: $darkBlue
+  display: grid
+  justify-content: center
+  margin-bottom: 30px
+  border-radius: 10px
+  transition: background 1s
+  z-index: 0
+  transition: 0.2s all
+  cursor: pointer
+  
+
+
+  &:hover 
+    z-index: 1
+    transform: scale(1.05)
+
+
+.box 
+  width: 200px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  align-items: center
+
+
+  img 
+    display: grid
+    justify-self: end

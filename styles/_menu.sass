@@ -1,0 +1,113 @@
+@import 'colors';
+
+%align-center
+  display: flex
+  align-items: center
+  
+.profile-box 
+  height: 250px
+  width: 270px
+  border-top: solid 5px transparent
+  border-radius: 10px
+  background-image: linear-gradient($darkBlue, $darkBlue), linear-gradient(to right, $lightBlue, $lightBlue)
+  background-origin: border-box
+  background-clip: content-box, border-box
+  border-bottom: none
+  @extend %align-center
+  flex-direction: column
+  z-index: 0
+  transition: 0.3s all
+  cursor: pointer
+
+
+  &:hover 
+    z-index: 1
+    transform: scale(1.10)
+
+
+  h6 
+    color: $lightGray
+    font-size: 14px
+    height: 90px
+    @extend %align-center
+
+
+  img 
+    margin-right: 10px
+
+
+  number 
+    font-size: 45px
+    font-weight: bold
+    color: white
+
+
+  h3 
+    color: $lightGray
+    font-weight: lighter
+    letter-spacing: 2px
+
+
+  p 
+    height: 106px
+    @extend %align-center
+    font-size: 14px
+    font-weight: bold
+    color: $green
+
+
+  h5 
+    height: 106px
+    @extend %align-center
+    font-size: 14px
+    font-weight: bold
+    color: $red
+
+
+  &:nth-child(3) 
+    border-top: solid 5px transparent
+    border-radius: 10px
+    background-image: linear-gradient($darkBlue, $darkBlue), linear-gradient(to right, $orange, $pink)
+    background-origin: border-box
+    background-clip: content-box, border-box
+    border-bottom: none
+
+
+  &:nth-child(4) 
+    border-top: 5px solid$red
+
+
+.overview-box h4 
+  color: $lightGray
+  font-size: 16px
+
+
+.overview-box number 
+  font-size: 32px
+  font-weight: bold
+  color: white
+
+
+.overview-box p 
+  font-weight: 700
+  display: grid
+  grid-template-columns: 1fr 1fr
+  justify-self: end
+  color: $green
+
+
+.overview-box img 
+  margin-right: 8px
+  margin-top: 6px
+
+
+.overview-box:nth-child(2) p 
+  color: $red
+
+
+.overview-box:nth-child(7) p 
+  color: $red
+
+
+.overview-box:nth-child(8) p 
+  color: $red
